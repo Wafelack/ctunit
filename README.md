@@ -11,6 +11,7 @@
 ### Creating a test runner
 
 The function to create a new test unit is defined as follows:
+
 `Runner *cunit_new(void);`
 
 It can return `NULL` in the following cases:
@@ -29,6 +30,7 @@ int main(void) {
 ### Adding tests to the runner
 
 The function to add a test to the test unit is defined as follows:
+
 `int add_test(Runner *runner, const char *name, int(*func)(void));`
 
 Error codes:
@@ -59,6 +61,7 @@ int main(void) {
 ### Running tests
 
 The function to run tests is defined as follows:
+
 `void run_tests(Runner *runner);`
 
 Example:
