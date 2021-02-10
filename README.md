@@ -23,6 +23,12 @@ Example:
 ```c
 int main(void) {
     Runner *runner = cunit_new();
+    
+    if (runner == NULL) {
+        printf("Failed to initialize runner\n");
+        return 2;
+    }
+    
     return 0;
 }
 ```
